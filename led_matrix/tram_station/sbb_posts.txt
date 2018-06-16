@@ -1,0 +1,38 @@
+http://transport.opendata.ch/v1/connections?from=8591104&limit=1&to=8503003&direct=1&fields[]=connections/from/departure
+{
+    "connections": [
+        {
+            "from": {
+                "departure": "2018-05-27T20:39:00+0200"
+            }
+        }
+    ]
+}
+
+https://transport.opendata.ch/v1/connections?from=8591104&limit=2&to=8503003&direct=1&fields[]=connections/from/arrival&fields[]=connections/from/departure&fields[]=connections/from/delay&fields[]=connections/from/prognosis/arrival&fields[]=connections/from/prognosis/departure
+{
+    "connections": [
+        {
+            "from": {
+                "arrival": null,
+                "departure": "2018-05-27T20:39:00+0200",
+                "delay": null,
+                "prognosis": {
+                    "arrival": null,
+                    "departure": null
+                }
+            }
+        },
+        {
+            "from": {
+                "arrival": null,
+                "departure": "2018-05-27T20:49:00+0200",
+                "delay": null,
+                "prognosis": {
+                    "arrival": null,
+                    "departure": null
+                }
+            }
+        }
+    ]
+}
